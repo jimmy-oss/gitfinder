@@ -1,5 +1,4 @@
-import { IfStmt } from '@angular/compiler';
-import { Component, EventEmitter, Input, OnInit, Output, Type } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Goal } from '../goal';
 
 @Component({
@@ -17,8 +16,7 @@ export class GoalComponent implements OnInit {
     new Goal(5,'Solve math homework','Damn Math',new Date(2019,2,14)),
     new Goal(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2030,3,14)),
   ];
-  
-  completeGoal(isComplete: boolean, index: any){
+  completeGoal(isComplete:boolean, index: any){
     if (isComplete) {
       this.goals.splice(index,1);
     }

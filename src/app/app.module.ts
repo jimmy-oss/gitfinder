@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
- import {FormsModule} from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+ 
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,7 +10,7 @@ import { GoalDetailComponent } from './goal-detail/goal-detail.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
-import { from } from 'rxjs';
+
 
 
 @NgModule({
@@ -22,11 +23,13 @@ import { from } from 'rxjs';
     GoalFormComponent,
     
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
