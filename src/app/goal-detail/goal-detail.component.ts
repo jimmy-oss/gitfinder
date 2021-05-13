@@ -7,6 +7,9 @@ import { Goal } from '../goal';
   styleUrls: ['./goal-detail.component.css']
 })
 export class GoalDetailComponent implements OnInit {
+  goalDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
 
   @Input()
   goal!: Goal;
