@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { IfStmt } from '@angular/compiler';
+import { Component, EventEmitter, Input, OnInit, Output, Type } from '@angular/core';
 import { Goal } from '../goal';
 
 @Component({
@@ -16,13 +17,18 @@ export class GoalComponent implements OnInit {
     new Goal(5,'Solve math homework','Damn Math'),
     new Goal(6,'Plot my world domination plan','Cause I am an evil overlord'),
   ];
+  completeGoal(isComplete: boolean, index: any){
+    if (isComplete) {
+      this.goals.splice(index,1);
+    }
+  }
   toggleDetails(index:any){
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
-
+  
   constructor() { }
-
-  ngOnInit() {
+ 
+  ngOnInit()  {
   }
 
 }
