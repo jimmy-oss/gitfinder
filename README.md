@@ -9,7 +9,7 @@ It consists of a form where the user can add more quotes into the system.
 # TECHNOLOGIES USED
  These are:<ul>
         <li>CSS</li>
-        <li>Angular CLI commands</li>
+        <li>Javascript</li>
         <li>Bootstrap</li>
         <li>HTML</li>
         <li>Typescript</li>
