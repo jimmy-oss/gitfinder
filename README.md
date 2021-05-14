@@ -1,6 +1,28 @@
-# Goals
+ # The Quote website
+![my screenshot](./Screenshot/Screenshot.jpg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+# PROJECT DESCRIPTION
+This project is comprised of a display which shows all the quotes saved on the system.
+It consists of a form where the user can add more quotes into the system.
+
+# TECHNOLOGIES USED
+ These are:<ul>
+        <li>CSS</li>
+        <li>Angular CLI commands</li>
+        <li>Bootstrap</li>
+        <li>HTML</li>
+        <li>Typescript</li>
+             </ul>
+# THE AUTHOR
+jimmy-oss
+If there is a pending information I can use to improve the project please feel free to email,
+that is jimmynjonge51@gmail.com.
+# BEHAVIOUR DRIVEN DEVELOPMENT
+The project consists of components which are the parent component and the child component files in angular.The child component is responsible for receiving data from a parent component inorder for the project to 
+work.
+# THE LICENSE
+The app is under mit license.
 
 ## Development server
 
