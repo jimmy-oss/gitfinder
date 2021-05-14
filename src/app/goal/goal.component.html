@@ -1,5 +1,12 @@
 <div class="container">
-  <h1>MY GOALS</h1>
+  <div id="site">
+
+    <div class="center">
+        <img class="center" src="assets/img/word quotes.jpeg"/>    
+    </div>
+    <div [ngStyle]="{backgroundImage:'url(./assets/img/flower.jpeg)'}" >
+       
+  </div>
   <hr>
 
   <div class="row">
@@ -7,7 +14,7 @@
       <div *ngFor='let goal of goals;let i = index'>
         <div>
           <h6 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h6>
-          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Show Details</button>
         </div>
         
 
@@ -20,5 +27,4 @@
         <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
     </div>
   </div>
-  <p *ngIf='goals.length > 5'>You have too many goals</p>
 </div>

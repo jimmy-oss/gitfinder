@@ -1,0 +1,8 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    background-image: url(/assets/img/flower.jpeg);
+}
