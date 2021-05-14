@@ -15,7 +15,10 @@ It consists of a form where the user can add more quotes into the system.
         <li>Typescript</li>
              </ul>
 # THE AUTHOR
-jimmy-oss
+<ul>
+<li>jimmy-oss</li>
+    </ul>
+    
 If there is a pending information I can use to improve the project please feel free to email,
 that is jimmynjonge51@gmail.com.
 # BEHAVIOUR DRIVEN DEVELOPMENT
