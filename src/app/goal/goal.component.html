@@ -1,14 +1,11 @@
 <div class="container">
-  <div id="site">
-
+  <div id="center">
     <div class="center">
-        <img class="center" src="assets/img/wordquotes.jpeg"/>    
+        <img class="center" src="assets/images/wordquotes.jpeg"/>    
     </div>
-    <div [ngStyle]="{backgroundImage:'url(./assets/img/flower.jpeg)'}" >
-       
-  </div>
+    </div>
+    </div>
   <hr>
-
   <div class="row">
     <div class="col-md-6">
       <div *ngFor='let goal of goals;let i = index'>
@@ -16,8 +13,6 @@
           <h6 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h6>
           <button (click)='toggleDetails(i)' class="btn btn-primary">Show Details</button>
         </div>
-        
-
         <div *ngIf='goal.showDescription'>
           <app-goal-detail  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
         </div>
@@ -26,5 +21,10 @@
       <div class="col-md-6">
         <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
     </div>
+    <div>
   </div>
 </div>
+ 
+
+
+

@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { from } from 'rxjs';
 import { Goal } from '../goal';
 
 @Component({
-  selector: 'app-goal',
+  selector: 'app-goal', 
   templateUrl: './goal.component.html',
   styleUrls: ['./goal.component.css']
 })
 export class GoalComponent implements OnInit {
+   
+    
 
   goals: Goal[] = [
     new Goal(1, 'Dwell on the beauty of life', 'Watch the stars, and see yourself running with them.Marcus Aurelius',new Date(2021,3,14)),
@@ -20,6 +23,7 @@ export class GoalComponent implements OnInit {
     if (isComplete) {
       this.goals.splice(index,1);
     }
+    
   }
   deleteGoal(isComplete: boolean, index: number){
     if (isComplete) {
@@ -50,3 +54,4 @@ export class GoalComponent implements OnInit {
 function index(goal: any, index: any) {
   throw new Error('Function not implemented.');
 }
+ 

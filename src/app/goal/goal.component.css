@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    
   }
-  .container{
-    background-image: url(/assets/img/wallpaper.jpeg);
-}
+   
