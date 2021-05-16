@@ -26,7 +26,7 @@ export class GoalDetailComponent implements OnInit {
   }
 
   downVoteButtonClick() {
-    this.numberOfDownVotes++;
+    this.numberOfDownVotes--;
   }
   constructor() { }
 
