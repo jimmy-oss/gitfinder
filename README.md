@@ -1,5 +1,5 @@
- # The Quote website
-![my screenshot](./Screenshot/Screenshot.jpg)
+ # The service-alert
+ 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 # PROJECT DESCRIPTION
