@@ -10,19 +10,24 @@ import { GoalService } from '../goal-service/goal.service';
    
 })
 export class GoalComponent implements OnInit {
-   goals:Goal[];
-  alertService: AlertService;
+  goals:Goal[];
+  alertService:AlertService;
+
   constructor(goalService:GoalService, alertService:AlertService) {
     this.goals = goalService.getGoals()
     this.alertService = alertService;
   }
 
-  'goals[]':any;Goals: any;
+
+ 
+
 addNewGoal(goal: { id: any; completeDate: string | number | Date; }){
   let goalLength = this.goals.length;
   goal.id = goalLength+1;
   goal.completeDate = new Date(goal.completeDate)
+
   this.goals.push()
+
     
 }
    
@@ -45,8 +50,7 @@ addNewGoal(goal: { id: any; completeDate: string | number | Date; }){
   toggleDetails(index:any){
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
-   
-   
+
  
   ngOnInit()  {
   }

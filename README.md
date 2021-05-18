@@ -1,6 +1,4 @@
  # The service-alert
- 
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 # PROJECT DESCRIPTION
 This project is comprised of a display which shows all the quotes saved on the system.
