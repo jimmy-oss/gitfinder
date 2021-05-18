@@ -11,6 +11,7 @@ import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 import { GoalService } from './goal-service/goal.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,6 +23,7 @@ import { GoalService } from './goal-service/goal.service';
     StrikethroughDirective,
     DateCountPipe,
     GoalFormComponent,
+     
     
     
     
@@ -31,6 +33,7 @@ import { GoalService } from './goal-service/goal.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
     
   ],
   providers: [GoalService],

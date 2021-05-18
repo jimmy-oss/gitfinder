@@ -1,8 +1,7 @@
- # The service-alert
+ # HttpClientModule
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 # PROJECT DESCRIPTION
-This project is comprised of a display which shows all the quotes saved on the system.
-It consists of a form where the user can add more quotes into the system.
+ HttpClientModule added the imports array. We are going to use this module to access a random quote API and display the quotes on our app.you'll see a random quote that changes every time you refresh the webpage.
 
 # TECHNOLOGIES USED
  These are:<ul>
