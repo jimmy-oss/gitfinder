@@ -1,9 +1,12 @@
 <div class="container">
+  <ng-progress></ng-progress>
+  <h1>MY QUOTES</h1>
+<div class="container">
   <div id="center">
     <div class="center">
         <img class="center" src="assets/images/wordquotes.jpeg"/>    
-    </div>
-    </div>
+            </div>
+        </div>
     </div>
   <div class="row">
     <div class="col-md-6">
@@ -20,9 +23,9 @@
       <div class="col-md-6">
         <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
     </div>
-    <div>
-  </div>
-</div>
+     <div>
+    </div>
+       </div>
   <div class="row">
     <blockquote class="blockquote text-center">
       <p class="mb-0">{{quote.quote}}</p>

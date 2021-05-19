@@ -1,8 +1,8 @@
- # HttpClientModule
+   # PROGRESS-BAR
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 # PROJECT DESCRIPTION
- HttpClientModule added the imports array. We are going to use this module to access a random quote API and display the quotes on our app.you'll see a random quote that changes every time you refresh the webpage.
-
+  NgProgressHttpClientModule works with the requests made from our app.NgProgressHttpClientModule works with the requests made from our app.
+in the template placed at the top where we want to see our progress bar. When we run our server and go to our app in the browser, we see the loader appear every time we refresh the page showing the progress of every new request.And there is random quotes.It has the subscribed function which has an err function that gives us the capacity to handle errors.
 # TECHNOLOGIES USED
  These are:<ul>
         <li>CSS</li>

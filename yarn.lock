@@ -164,7 +164,7 @@
     "universal-analytics" "0.4.23"
     "uuid" "8.3.2"
 
-"@angular/common@~11.2.13", "@angular/common@11.2.13":
+"@angular/common@>=5.0.0", "@angular/common@~11.2.13", "@angular/common@11.2.13":
   "integrity" "sha512-96iZ4wlZado78yG6eY/ZmY6+H2X2hJi2XsK7iXKzc5h3oeILEkt+ulfBNkCNjMm8xPYBmLrSBueG96/T4/Bi5w=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-11.2.13.tgz"
   "version" "11.2.13"
@@ -1176,6 +1176,18 @@
     "@angular-devkit/core" "11.2.12"
     "enhanced-resolve" "5.7.0"
     "webpack-sources" "2.2.0"
+
+"@ngx-progressbar/core@^3.0.2", "@ngx-progressbar/core@3.0.2":
+  "integrity" "sha512-c/Lpf5uYrxqNU6ZIqcNu1sDGNfVbwmxN1G95Tb1GjKV0JW9+QDS+4ELPK8GEYt/xfTTW8yy4YkNQ8fp3qWGn4A=="
+  "resolved" "https://registry.npmjs.org/@ngx-progressbar/core/-/core-3.0.2.tgz"
+  "version" "3.0.2"
+
+"@ngx-progressbar/http-client@^3.0.2":
+  "integrity" "sha512-Kp/+YIBJ4gOGgH79PcsGeZUWsI4iLYbX7jt+Sn3S6mTnmm4L5vP5pZlDcQzg2HslWyVs6W5UOumpk5cDePkK3g=="
+  "resolved" "https://registry.npmjs.org/@ngx-progressbar/http-client/-/http-client-3.0.2.tgz"
+  "version" "3.0.2"
+  dependencies:
+    "@ngx-progressbar/core" "3.0.2"
 
 "@nodelib/fs.scandir@2.1.4":
   "integrity" "sha512-33g3pMJk3bg5nXbL/+CY6I2eJDzZAni49PfJnL5fghPTggPvBd/pFNSgJsdAgWptuFu7qq/ERvOYFlhvsLTCKA=="
@@ -9169,6 +9181,11 @@
   "version" "1.0.3"
   dependencies:
     "aproba" "^1.1.1"
+
+"rxjs-compat@^6.6.7":
+  "integrity" "sha512-szN4fK+TqBPOFBcBcsR0g2cmTTUF/vaFEOZNuSdfU8/pGFnNmmn2u8SystYXG1QMrjOPBc6XTKHMVfENDf6hHw=="
+  "resolved" "https://registry.npmjs.org/rxjs-compat/-/rxjs-compat-6.6.7.tgz"
+  "version" "6.6.7"
 
 "rxjs@^6.5.3", "rxjs@^6.6.0", "rxjs@~6.6.0":
   "integrity" "sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ=="
