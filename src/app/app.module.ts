@@ -14,6 +14,7 @@ import { GoalService } from './goal-service/goal.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -25,6 +26,7 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
     StrikethroughDirective,
     DateCountPipe,
     GoalFormComponent,
+    AboutComponent,
      
     
     

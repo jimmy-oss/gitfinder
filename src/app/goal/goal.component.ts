@@ -4,6 +4,8 @@ import { Goal } from '../goal';
 import { GoalService } from '../goal-service/goal.service';
 import { HttpClient } from '@angular/common/http';
 import { Quote } from '../quote-class/quote';
+import { QuoteRequestService } from '../quote-http/quote-request.service';
+
 
 @Component({
   selector: 'app-goal', 
@@ -12,13 +14,13 @@ import { Quote } from '../quote-class/quote';
    
 })
 export class GoalComponent implements OnInit {
-          
+           
 
   goals:Goal[];
   alertService:AlertService;
   quote!: Quote;
 
-  constructor(goalService:GoalService, alertService:AlertService,private http:HttpClient) {
+  constructor(goalService:GoalService, alertService:AlertService,private http:HttpClient, private quoteService:QuoteRequestService) {
     this.goals = goalService.getGoals()
     this.alertService = alertService;
   }
@@ -55,11 +57,15 @@ addNewGoal(goal: { id: any; completeDate: string | number | Date; }){
   toggleDetails(index:any){
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
-  ngOnInit() {
+  ngOnInit()  {
+
+    this.quoteService.quoteRequest()
+    this.quote = this.quoteService.quote
 
     interface ApiResponse{
       author:string;
       quote:string;
+     
     }
  
     this.http.get<ApiResponse>("http://quotes.stormconsultancy.co.uk/random.json").subscribe(data=>{
