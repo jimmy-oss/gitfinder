@@ -1,17 +1,2 @@
 <p>{{ goal.description }}</p>
-<p>Days ago {{ goal.completeDate | dateCount }} days</p>
-<button (click)="goalDelete(true)" class="btn btn-outline-danger">
-  Delete
-</button>
-<button class="btn-info"
-  (click)="upVoteButtonClick()"
-  style="border-radius: 15px; border: none; width: 150px; height: 40px;">
-  <i class="fa fa-thumbs-up"></i>&nbsp; Upvote &nbsp; {{ numberOfUpVotes }}
-</button>
-<button class="btn-warning"
-  (click)="downVoteButtonClick()"
-  style="border-radius: 15px; border: none; width: 150px; height: 40px;">
-  <i class="fa fa-thumbs-down"></i>&nbsp; Downvote &nbsp;
-  {{ numberOfDownVotes }}
-</button>
  

@@ -1,39 +1,22 @@
-<div class="container">
-  <ng-progress></ng-progress>
-  <h1>MY QUOTES</h1>
-<div class="container">
-  <div id="center">
-    <div class="center">
-        <img class="center" src="assets/images/wordquotes.jpeg"/>    
-            </div>
-        </div>
-    </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div *ngFor='let goal of goals;let i = index'>
-        <div>
-          <h6 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h6>
-          <button (click)='toggleDetails(i)' class="btn btn-primary">Show Details</button>
-        </div>
-        <div *ngIf='goal.showDescription'>
-          <app-goal-detail  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
-        </div>
+ <div class="jumbotron text-center">  
+  <div class="container-fluid">
+    <div>
+        <input type="text"  [(ngModel)]="username" id="mySearch" placeholder="Search.." title="Type in a category"><button (click)="search()" class="btn btn-primary">Search</button>
+      </div><br>
+    <div class="row">
+      <div  class="col-sm-6" >
+        <img src="{{github.avatar_url}}" alt="">
+      </div>
+      <div class="well">
+      <div  *ngIf ="github" class="col-sm-6" id="identity">
+        <h5 class="hello">Login:{{github?.login}}</h5>
+        <h5 class="hello">Name:{{ github?.name}}</h5>
+        <h5 class="hello">Bio:{{github?. bio}}</h5>
+        <h5 class="hello">Location:{{ github?.location}}</h5>
+        <h5 class="hello">Created:{{ github?.created_at|date}}</h5>
+        <a href="{{github.html_url}}" target="_blank"><button class="list-group-item list-group-item-action active">View them in profile</button></a>
       </div>
     </div>
-      <div class="col-md-6">
-        <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
-    </div>
-     <div>
-    </div>
-       </div>
-  <div class="row">
-    <blockquote class="blockquote text-center">
-      <p class="mb-0">{{quote.quote}}</p>
-      <footer class="blockquote-footer"><cite>{{quote.author}}</cite></footer>
-    </blockquote>
+   </div>      
   </div>
-
- 
-
-
-
+  </div>
