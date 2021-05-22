@@ -21,7 +21,7 @@ export class QuoteRequestService {
       .get(
         'https://api.github.com/users/' +
           this.username +
-          '?access_token=d159b220b68555f012a7225b56518b449e92429e'
+          '?access_token='
       )
       .subscribe((github) => {
         this.github = github;

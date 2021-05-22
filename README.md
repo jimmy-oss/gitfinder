@@ -1,7 +1,8 @@
    # GIT SEARCHER
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 # PROJECT DESCRIPTION
- A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. Any person can look for the repositories
+ A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. Any person can look for the repositories.
+  
    # TECHNOLOGIES USED
  These are:<ul>
         <li>CSS</li>

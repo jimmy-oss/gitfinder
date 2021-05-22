@@ -4,7 +4,12 @@
     align-items: center;
     height: 100%;
     
+     
+    
   }
   btn{
     margin:2px;
   } 
+    .center h2{
+      background-color:cyan
+    }

@@ -16,6 +16,7 @@ export class GoalComponent implements OnInit {
   username!: string;
   github: any;
   repos: any;
+  user: any;
   //  public githubUser:string;
   search() {
     // this service.GitRequest
