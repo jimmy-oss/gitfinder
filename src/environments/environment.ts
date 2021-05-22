@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl:"http://quotes.stormconsultancy.co.uk/random.json"
+  apiUrl:"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"
 };
 
 /*

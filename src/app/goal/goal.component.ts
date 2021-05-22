@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertService } from '../alert-service/alert.service';
 import { Goal } from '../goal';
-import { GoalService } from '../goal-service/goal.service';
+import { GoalService } from  '../goal-service/goal.service'
 import { HttpClient } from '@angular/common/http';
 
 
