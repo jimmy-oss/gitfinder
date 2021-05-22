@@ -9,7 +9,7 @@
 
 # dependencies
 /node_modules
-/environments
+environments
 
 # profiling files
 chrome-profiler-events*.json
@@ -25,7 +25,7 @@ environments.ts
 *.launch
 .settings/
 *.sublime-workspace
-/environments
+environments
 
 # IDE - VSCode
 .vscode/*
@@ -44,10 +44,10 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-/environment.ts
-/environment.prod.ts
+environment.ts
+environment.prod.ts
 
 # System Files
 .DS_Store
 Thumbs.db
-environments/
+environments
