@@ -7,16 +7,22 @@ import { GoalDetailComponent } from './goal-detail/goal-detail.component';
  
 
 const routes: Routes = [
-   { path: 'goals', component: GoalComponent},
+   { path: 'home', component: GoalComponent},
    { path: 'about', component: AboutComponent},
    { path:'**', component:NotFoundComponent},
 
    
-  { path: '', redirectTo:"/goals", pathMatch:"full"},
+  { path: '', redirectTo:"/home", pathMatch:"full"},
 ];
 
+ 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
+
+function otherwise(arg0: { redirectTo: string; }) {
+  throw new Error('Function not implemented.');
+}

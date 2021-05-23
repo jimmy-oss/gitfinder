@@ -1751,7 +1751,7 @@
   "resolved" "https://registry.npmjs.org/alphanum-sort/-/alphanum-sort-1.0.2.tgz"
   "version" "1.0.2"
 
-"angular-cli-ghpages@*":
+"angular-cli-ghpages@^1.0.0-rc.1":
   "integrity" "sha512-BSCMdd7aVaxpeYOVQCZ+Ap9vP58+I0VApKF2NBNVVDjJfVjsN9MqeMOc38dgJX8SPpI8mqPLx+q6hruXVh2MrA=="
   "resolved" "https://registry.npmjs.org/angular-cli-ghpages/-/angular-cli-ghpages-1.0.0-rc.1.tgz"
   "version" "1.0.0-rc.1"
