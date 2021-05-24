@@ -46,12 +46,7 @@ export class GoalComponent implements OnInit {
   
   }
     }
-    if (environment.production) {
-      enableProdMode();
-      window.console.log = function () { };   // disable any console.log debugging statements in production mode
-      // window.console.error = function () { };
-    
-    }
+     
 
 function index(_goal: any, _index: any) {
   throw new Error('Function not implemented.');

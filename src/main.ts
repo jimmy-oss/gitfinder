@@ -10,3 +10,9 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+  if (environment.production) {
+    enableProdMode();
+    window.console.log = function () { };   // disable any console.log debugging statements in production mode
+    // window.console.error = function () { };
+  
+  }
