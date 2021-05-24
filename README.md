@@ -1,4 +1,5 @@
    # GIT SEARCHER &#10024;
+   ![my screenshot](./Screenshot/Screen.jpg)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 # PROJECT DESCRIPTION &#127800;
  A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. Any person can look for the repositories.
