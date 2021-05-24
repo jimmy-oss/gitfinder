@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiurl: 'https://api.github.com/users/' +'?access_token="ghp_wtQFxUJxkKRozFvtzgrVKwKOiLg2f74EIGL'
+  apiurl: 'https://api.github.com/users/{jimmy-oss}' +'?access_token="' + 'https://api.github.com/users/{jimmy-oss}'
 
 };
 
