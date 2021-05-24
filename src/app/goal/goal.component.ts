@@ -3,8 +3,7 @@ import { AlertService } from '../alert-service/alert.service';
 import { Goal } from '../goal';
 import { GoalService } from  '../goal-service/goal.service'
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment.prod';
-
+import { BehaviorSubject } from 'rxjs/Rx'
 
 
 @Component({
