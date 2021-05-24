@@ -3,6 +3,7 @@ import { AlertService } from '../alert-service/alert.service';
 import { Goal } from '../goal';
 import { GoalService } from  '../goal-service/goal.service'
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment.prod';
 
 
 
@@ -45,7 +46,17 @@ export class GoalComponent implements OnInit {
   
   }
     }
+    if (environment.production) {
+      enableProdMode();
+      window.console.log = function () { };   // disable any console.log debugging statements in production mode
+      // window.console.error = function () { };
+    
+    }
 
 function index(_goal: any, _index: any) {
+  throw new Error('Function not implemented.');
+}
+
+function enableProdMode() {
   throw new Error('Function not implemented.');
 }
