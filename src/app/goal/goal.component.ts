@@ -46,8 +46,7 @@ export class GoalComponent implements OnInit {
   
   }
     }
-     
-
+    
 function index(_goal: any, _index: any) {
   throw new Error('Function not implemented.');
 }
