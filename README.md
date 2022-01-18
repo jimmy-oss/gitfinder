@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | :-------------: |:--------------:|
 | Search User      | display user profile details & repositories |
 | Click on username      | Redirected to github profile for the user      |
-| click on repository title | Redirected to repository link on github      |
+| click on repository title | Redirected to repository link on their github account      |
  # TECHNOLOGIES USED &#10024;
  These are:<ul>
         <li>CSS</li>
